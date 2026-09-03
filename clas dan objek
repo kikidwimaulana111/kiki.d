@@ -1,0 +1,37 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+class Siswa {
+public:
+    string nama;
+    int umur;
+    string kelas;
+    string jurusan;
+    int nilai;
+    bool lulus;
+
+    void tampilkanData() {
+        cout << "Nama    : " << nama << endl;
+        cout << "Umur    : " << umur << " tahun" << endl;
+        cout << "Kelas   : " << kelas << endl;
+        cout << "Jurusan : " << jurusan << endl;
+        cout << "Nilai   : " << nilai << endl;
+        cout << "Lulus   : " << (lulus ? "Ya" : "Tidak") << endl;
+    }
+};
+
+int main() {
+    Siswa siswa1;
+    siswa1.nama = "Kiki";
+    siswa1.umur = 15;
+    siswa1.kelas = "X";
+    siswa1.jurusan = "TKJ";
+    siswa1.nilai = 90;
+    siswa1.lulus = true;
+
+    cout << "===== DATA SISWA =====" << endl;
+    siswa1.tampilkanData();
+
+    return 0;
+}
